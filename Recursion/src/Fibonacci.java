@@ -14,10 +14,10 @@ public class Fibonacci {
 			}
 	}
 	public static void main(String[] args) {
-		int f1 = 0,f2 = 1,f3 = 0;
+		int f1 = 1,f2 = 0,f3 = 0;
 		System.out.println("Please Enter the number: ");
 		Scanner scan = new Scanner(System.in);
 		int inputt=scan.nextInt();
-		fibonacci(f2,f1,f3,inputt);
+		fibonacci(f1,f2,f3,inputt);
 	}
 }
