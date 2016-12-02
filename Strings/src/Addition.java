@@ -39,17 +39,11 @@ public class Addition {
 						return Print(count,++y);			 	
 					}
 			}
-			
-		 
-    	 
-    	 
 	   public static void main(String[] args) {
-		 
-		 
+		 		 
 		 int x=0,y=0;
 		 x=Scanner(x);
 		 Print(x,y);
+	   	 }
 
-		
-}
 }
