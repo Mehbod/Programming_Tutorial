@@ -18,7 +18,7 @@ public class Reverse {
 		System.out.println("Please Enter a name: ");
 		inputt=scan.next();
 		int x=inputt.length();
-		int y=0;
+//		int y=0;
 		Print(x);		
 	}
 

@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Expand {
 	public static String inputt;
 
-	public static int Expend(int lenght,int x){
+	/*public static int Expend(int lenght,int x){
 		char chr;
 		char chr2 = 0;
 		char chr3 = 0;
@@ -49,7 +49,36 @@ public class Expand {
 			
 			return Expend(lenght,++x);
 		}		
-	}
+	}*/
+	public static int Expend(int lenght,int x){
+	char chr;
+	char chr2 = 0;
+	char chr3 = 0;
+	if(x>=lenght){
+		return 0;
+	}else{
+
+		while(Character.isDigit(inputt.charAt(x))){
+			int i=Character.getNumericValue(chr);
+			
+				
+				int z=Character.getNumericValue(chr2);
+				i+=z;
+				i*=10;
+				x++;
+				
+		}					
+			for(int j=0;j<i;j++){
+				System.out.print(inputt.charAt(x+1));
+			}
+			x++;				
+		
+		//	System.out.print(inputt.charAt(x));			
+			
+		
+		return Expend(lenght,++x);
+	}		
+}
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Please Enter a name: ");
